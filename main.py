@@ -43,7 +43,7 @@ laczny_koszt_pracodawcy = 0
 for i in range(0, liczba_pracownikow):
     imie = pracownicy[i].imie
     brutto = pracownicy[i].wyn_brutto
-    laczny_koszt_pracodawcy = pracownicy[i].laczny_koszt_pracodaw()
+    laczny_koszt_pracodawcy += pracownicy[i].laczny_koszt_pracodaw()
     print(imie, f"{pracownicy[i].wynagrodzenie_netto():.2f}",
     f"{pracownicy[i].skladki_pracodawcy():.2f}", 
         f"{pracownicy[i].laczny_koszt_pracodaw():.2f}")
